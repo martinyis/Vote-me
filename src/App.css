@@ -3,9 +3,27 @@
 }
 .container {
   display: flex;
-  max-width: 831px;
+  max-width: 1089px;
   margin: 0px auto;
   padding: 0 15px;
   gap: 162px;
   margin-top: 103px;
+}
+
+.page-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.page-links {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  flex: 0 1 20%;
 }
