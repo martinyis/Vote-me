@@ -1,5 +1,11 @@
+import VoteApp from './VoteApp';
+
 const TrendingPolls = () => {
-  return <div>TrendingPolls</div>;
+  return (
+    <div>
+      <VoteApp />
+    </div>
+  );
 };
 
 export default TrendingPolls;
