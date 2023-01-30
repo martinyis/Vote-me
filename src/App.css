@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding: 0 10px;
 }
 .container {
   display: flex;
@@ -8,6 +9,7 @@
   padding: 0 15px;
   gap: 162px;
   margin-top: 103px;
+  padding-bottom: 500px;
 }
 
 .page-link {
@@ -47,11 +49,19 @@
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   padding: 34px 34px 13px 34px;
+  overflow: hidden;
+  display: flex;
+  height: 648px;
 }
 .vote-container {
+  overflow: hidden;
 }
 .vote__overview {
   max-width: 366px;
+  position: relative;
+  width: 100%;
+}
+.overwiev-2 {
 }
 .vote__name {
   display: flex;
@@ -84,4 +94,106 @@
 .vote__line {
   margin-top: 21px;
   border: 1px solid rgba(255, 255, 255, 0.6);
+}
+.vote-choice {
+}
+.vote-question {
+  margin-top: 32px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.vote-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.vote-option {
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.active-option {
+  background: rgba(255, 255, 255, 0.6);
+}
+.vote-option-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  color: #ffffff;
+  padding-left: 10px;
+}
+@media (max-width: 916px) {
+  .container {
+    flex-direction: column;
+    gap: 0;
+  }
+  .profile {
+    flex-direction: column;
+    gap: 0;
+  }
+  .vote-box {
+    max-width: 434px;
+    margin: 0px auto;
+  }
+}
+
+@media (max-width: 478px) {
+  .container {
+    margin-top: 20px;
+  }
+  .profile {
+    margin-top: 40px;
+  }
+  .vote-box {
+    max-width: 100%;
+  }
+  .vote__picture img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.change-bar {
+  max-width: 188px;
+  display: flex;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  margin-top: 11px;
+  justify-content: center;
+  height: 40px;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 10px;
+}
+.change-bar-btn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  color: #ffffff;
+  background: none;
+  border-radius: 6px;
+  width: 88px;
+  height: 32px;
+  border: none;
+}
+.active-bar {
+  background: rgba(255, 255, 255, 0.4);
 }
