@@ -1,5 +1,13 @@
+import CreateVote from './CreateVote';
+import Profile from './Profile';
+
 const CreatePoll = () => {
-  return <div>CreatePoll</div>;
+  return (
+    <div>
+      <Profile />
+      <CreateVote />
+    </div>
+  );
 };
 
 export default CreatePoll;

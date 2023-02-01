@@ -52,6 +52,7 @@
   overflow: hidden;
   display: flex;
   height: 648px;
+  width: 434px;
 }
 .vote-container {
   overflow: hidden;
