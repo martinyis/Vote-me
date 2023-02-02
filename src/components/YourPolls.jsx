@@ -1,5 +1,11 @@
+import VoteApp from './VoteApp';
+
 const YourPolls = () => {
-  return <div>YourPolls</div>;
+  return (
+    <div>
+      <VoteApp />
+    </div>
+  );
 };
 
 export default YourPolls;
